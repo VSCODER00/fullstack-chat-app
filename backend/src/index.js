@@ -32,7 +32,7 @@ if(process.env.NODE_ENV==='production'){
     })
 }
 const start=async ()=>{
-    try{
+    try{    
         await connectDB(process.env.MONGO_URI)
         server.listen(PORT,()=>{
         console.log(`server is listening on port ${PORT}`);
